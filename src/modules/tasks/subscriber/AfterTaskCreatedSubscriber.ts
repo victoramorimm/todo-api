@@ -1,6 +1,6 @@
-import { TaskModel } from "../modules/model/TaskModel";
-import { NotifyTaskWasCreated } from "../modules/tasks/service/INotifyTaskWasCreated";
-import eventsEmitter from "./EventEmitter";
+import { TaskModel } from "../../model/TaskModel";
+import { NotifyTaskWasCreated } from "../service/INotifyTaskWasCreated";
+import eventsEmitter from "../../../shared/EventEmitter";
 
 export class AfterTaskCreatedEventSubscriber {
   constructor(private readonly notification: NotifyTaskWasCreated){
