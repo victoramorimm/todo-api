@@ -1,4 +1,4 @@
-import { Publisher } from "../../../../shared/Publisher";
+import { Publisher } from "../../../../core/Publisher";
 import { TaskModel } from "../../../model/TaskModel";
 import { ITaskRepository } from "../../infra/repository/protocol/ITaskRepository";
 import { CreateTaskRequestDTO, ICreateTaskUseCase } from "./ICreateTaskUseCase";

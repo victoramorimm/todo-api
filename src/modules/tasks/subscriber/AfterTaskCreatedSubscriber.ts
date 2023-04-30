@@ -1,6 +1,6 @@
 import { TaskModel } from "../../model/TaskModel";
 import { NotifyTaskWasCreated } from "../service/INotifyTaskWasCreated";
-import eventsEmitter from "../../../shared/EventEmitter";
+import eventsEmitter from "../../../core/EventEmitter";
 
 export class AfterTaskCreatedEventSubscriber {
   constructor(private readonly notification: NotifyTaskWasCreated){
