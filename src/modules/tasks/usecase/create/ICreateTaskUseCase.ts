@@ -4,7 +4,7 @@ interface ICreateTaskUseCase {
 
 type CreateTaskRequestDTO = {
 	done: boolean;
-	task: 'Tarefa 01'
+	task: string;
 }
 
 export { ICreateTaskUseCase, CreateTaskRequestDTO }
