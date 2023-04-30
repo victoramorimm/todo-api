@@ -1,0 +1,26 @@
+{
+  "name": "grpc-example",
+  "version": "1.0.0",
+  "description": "grpc test example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:grpc": "ts-node src/infra/http/gRPC/server.ts",
+    "start:express": "ts-node src/infra/http/express/server.ts"
+  },
+  "author": "Victor Amorim",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.14",
+    "@grpc/proto-loader": "^0.7.6",
+    "express": "^4.18.2",
+    "grpc": "^1.24.11",
+    "prisma": "^4.13.0",
+    "redis": "^4.6.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}
