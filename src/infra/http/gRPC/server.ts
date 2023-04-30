@@ -5,7 +5,7 @@ import path from 'path';
 import '../../../index'
 import { makeCreateTaskController } from '../../../modules/tasks/controller/factory/CreateTasksControllerFactory';
 
-const todoProtoPath = path.resolve(__dirname, '..', '..', '..', '..', 'todo.proto')
+const todoProtoPath = path.resolve(__dirname, '..', '..', '..', '..', 'proto', 'todo.proto')
 
 const options = {
   keepCase: true,

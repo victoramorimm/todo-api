@@ -11,7 +11,7 @@ const options = {
   oneofs: true,
 };
 
-const protoPath = path.resolve(__dirname, '..', '..', '..', '..', 'todo.proto')
+const protoPath = path.resolve(__dirname, '..', '..', '..', '..', 'proto', 'todo.proto')
 
 const packageDefinition = protoLoader.loadSync(protoPath, options);
 
