@@ -3,7 +3,7 @@ import * as protoLoader from '@grpc/proto-loader';
 import { makeListTasksController } from '../../../modules/tasks/controller/list/factory/ListTasksControllerFactory';
 import path from 'path';
 import '../../../index'
-import { makeCreateTaskController } from '../../../modules/tasks/controller/factory/CreateTasksControllerFactory';
+import { makeCreateTaskController } from '../../../modules/tasks/controller/create/factory/CreateTasksControllerFactory';
 
 const todoProtoPath = path.resolve(__dirname, '..', '..', '..', '..', 'proto', 'todo.proto')
 
