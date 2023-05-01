@@ -1,4 +1,4 @@
-import { Publisher } from "../../../../core/Publisher";
+import { EventNameEnum, Publisher } from "../../../../core/Publisher";
 import { TaskModel } from "../../../model/TaskModel";
 import { ITaskRepository } from "../../infra/repository/protocol/ITaskRepository";
 import { CreateTaskRequestDTO, ICreateTaskUseCase } from "./ICreateTaskUseCase";
@@ -13,7 +13,7 @@ class CreateTaskUseCase implements ICreateTaskUseCase {
 		
 		await this.taskRepository.create(taskModel)
 		
-		Publisher.publishMessage('TASK_CREATION', taskModel)
+		Publisher.publishMessage(EventNameEnum.TASK_CREATION, taskModel)
 	}
 }
 

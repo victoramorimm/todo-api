@@ -4,9 +4,13 @@ class Publisher {
   constructor(){
   } 
   
-  static publishMessage(eventName: string, data: any){
+  static publishMessage(eventName: EventNameEnum, data: any){
     eventsEmitter.emit(eventName, data);
   }
 }
 
-export { Publisher }
+enum EventNameEnum {
+  TASK_CREATION = 'TASK_CREATION'
+}
+
+export { Publisher, EventNameEnum }
