@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 service TodoService {
-	rpc List (Empty) returns (TodoList) {}
+	rpc List (ListTodo) returns (TodoList) {}
 	rpc Create (CreateTodo) returns (Empty) {}
 }
 
@@ -16,6 +16,11 @@ message TodoItem {
 message CreateTodo {
 	bool done = 1;
 	string task = 2;
+}
+
+message ListTodo {
+	int32 skip = 1;
+	int32	take = 2;
 }
 
 message TodoList {
