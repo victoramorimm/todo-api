@@ -27,7 +27,7 @@ server.addService(todoProto.TodoService.service, {
 	list: async (request: any, callback: Function) => {
 		const controller = makeListTasksController()
 		
-		const result = await controller.handle(request)
+		const result = await controller.handle(request.request)
 	
 		callback(null, result)
 	},
