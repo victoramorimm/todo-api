@@ -11,7 +11,7 @@ datasource db {
 }
 
 model Task {
-  id      BigInt    @unique() @default(autoincrement())
+  id      Int    @unique() @default(autoincrement())
   done    Boolean
   task    String
 }

@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Task" (
-    "id" BIGSERIAL NOT NULL,
+    "id" SERIAL NOT NULL,
     "done" BOOLEAN NOT NULL,
     "task" TEXT NOT NULL
 );
