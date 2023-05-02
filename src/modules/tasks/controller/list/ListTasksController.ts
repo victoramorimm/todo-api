@@ -1,5 +1,5 @@
 import { IListTasksUseCase } from "../../usecase/list/IListTasksUseCase";
-import { IListTasksController } from "./IListTasksController";
+import { IListTasksController, ListTasksDTO } from "./IListTasksController";
 import { ListTasksControllerResponse } from "./response/ListTasksControllerResponse";
 
 export class ListTasksController implements IListTasksController {
@@ -7,8 +7,8 @@ export class ListTasksController implements IListTasksController {
 		private readonly useCase: IListTasksUseCase
 	) {}
 	
-	async handle(request: any): Promise<ListTasksControllerResponse> {
-		const result = await this.useCase.execute()
+	async handle(request: ListTasksDTO): Promise<ListTasksControllerResponse> {
+		const result = await this.useCase.execute(request)
 	
 		return result;
 	}

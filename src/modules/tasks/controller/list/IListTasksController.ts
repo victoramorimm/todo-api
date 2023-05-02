@@ -1,7 +1,12 @@
 import { ListTasksControllerResponse } from "./response/ListTasksControllerResponse";
 
 interface IListTasksController {
-	handle(request: void): Promise<ListTasksControllerResponse>
+	handle(request: ListTasksDTO): Promise<ListTasksControllerResponse>
 }
 
-export { IListTasksController }
+type ListTasksDTO = {
+	skip: number;
+	take: number;
+}
+
+export { IListTasksController, ListTasksDTO }
